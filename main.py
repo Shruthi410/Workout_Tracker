@@ -32,7 +32,7 @@ json_data = {
 response = requests.post(url=natural_language_endpoint, json=json_data, headers=headers)
 result = response.json()
 
-print(result)
+# print(result)
 
 authorization_header = {
     "Authorization": "Bearer ywdhj9d39847ncmw84c7cn"
@@ -53,7 +53,7 @@ for exercise in result["exercises"]:
     }
 
     sheet_response = requests.post(sheet_endpoint, json=sheet_data, headers=authorization_header)
-    print(sheet_response.text)
+#   print(sheet_response.text)
 
 
 
